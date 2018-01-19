@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js --dev
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.2.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "dev": "npm run development",
+      "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "watch-poll": "npm run watch -- --watch-poll",
+      "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "prod": "npm run production",
+      "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+      "animate.css": "^3.5.2",
+      "axios": "^0.15.3",
+      "bootstrap": "4.0.0-alpha.6",
+      "flatpickr": "^3.0.6",
+      "font-awesome": "^4.7.0",
+      "highcharts": "^5.0.12",
+      "laravel-mix": "^1.0.7",
+      "lodash": "^4.17.4",
+      "moment": "^2.18.1",
+      "numeral": "^2.0.6",
+      "sweetalert2": "^6.6.5",
+      "vue": "^2.3.4",
+      "vue-digital-clock": "^1.5.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com:443
+      at Object.exports._errnoException (util.js:1024:11)
+      at errnoException (dns.js:55:15)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
